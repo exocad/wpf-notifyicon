@@ -1,6 +1,14 @@
 hardcodet.net NotifyIcon for WPF - Changelog
-Copyright (c) 2009-2021 Philipp Sumi
+Copyright (c) 2024 exocad GmbH, 2009-2021 Philipp Sumi
 Contact and Information: http://www.hardcodet.net
+
+1.1.1 (2024.07.17)
+*****
+
+CHG Changed the supported target frameworks to .NET 4.8, .NET6 and .NET8.
+FIX Fixed a tooltip positioning issue (thanks to PR https://github.com/hardcodet/wpf-notifyicon/pull/96 made by AliveDevil).
+CHG Switched to artifacts output.
+
 
 1.1.0 (2021.03.27)
 *****

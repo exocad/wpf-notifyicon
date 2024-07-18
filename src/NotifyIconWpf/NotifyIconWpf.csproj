@@ -4,6 +4,8 @@
     <AssemblyName>Hardcodet.NotifyIcon.Wpf</AssemblyName>
     <AssemblyTitle>NotifyIcon for WPF</AssemblyTitle>
     <Product>NotifyIcon WPF</Product>
+
+    <PackageId>Exocad.Hardcodet.NotifyIcon.Wpf</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

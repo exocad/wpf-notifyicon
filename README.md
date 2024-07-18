@@ -1,8 +1,11 @@
 # Hardcodet NotifyIcon for WPF
 
-:rocket: **This is the new official repository of the Hardcodet WPF NotifyIcon** :rocket:
+This is a fork of the original [repository](https://github.com/hardcodet/wpf-notifyicon) which appears to be inactive.
 
-Current version: [![Nuget](https://img.shields.io/nuget/v/Hardcodet.NotifyIcon.Wpf.svg)](https://www.nuget.org/packages/Hardcodet.NotifyIcon.Wpf/)
+There are a few minor changes:
+
+- Integrated a fix for an [incorrectly positioned tooltip (Issue #106)](https://github.com/hardcodet/wpf-notifyicon/issues/106) which has been addressed by the PR [#96](https://github.com/hardcodet/wpf-notifyicon/pull/96).
+- Added .NET6 and .NET8 to the `TargetFrameworks`.
 
 ## Description
 
