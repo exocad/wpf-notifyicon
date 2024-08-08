@@ -12,7 +12,7 @@
     <Copyright>Copyright (c) 2009-2021 Philipp Sumi, 2024 exocad GmbH</Copyright>
     <Company>hardcodet.net, exocad GmbH</Company>
     <Authors>Philipp Sumi, Robin Krom, Jan Karger, exocad GmbH</Authors>
-    <PublicRelease>true</PublicRelease>
+    <Version>1.1.1</Version>
     <PackageIcon>icon.png</PackageIcon>
     <RepositoryUrl>https://github.com/exocad/wpf-notifyicon</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -33,13 +33,6 @@
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.6.139">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-
   <Choose>
     <When Condition=" '$(IsSampleProject)' != 'true' ">
       <PropertyGroup>
@@ -54,27 +47,13 @@
         <DelaySign>false</DelaySign>
         <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
       </PropertyGroup>
-
-      <ItemGroup>
-        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
-        <None Include="$(SolutionDir)\icon.png" Pack="true" PackagePath="\"/>
-      </ItemGroup>
-
-      <!-- SourceLink -->
-      <PropertyGroup>
-        <!-- Optional: Declare that the Repository URL can be published to NuSpec -->
-        <PublishRepositoryUrl>true</PublishRepositoryUrl>
-        <!-- Optional: Embed source files that are not tracked by the source control manager to the PDB -->
-        <EmbedUntrackedSources>true</EmbedUntrackedSources>
-        <!-- https://github.com/dotnet/sourcelink/blob/master/docs/README.md#embedallsources -->
-        <EmbedAllSources>true</EmbedAllSources>
-      </PropertyGroup>
     </When>
   </Choose>
 
   <ItemGroup>
     <None Remove="**\*.png;**\*.jpg;**\*.ico" />
     <Resource Include="**\*.png;**\*.jpg;**\*.ico" />
+    <Resource Include="..\icon.png" Pack="true" PackagePath=""/>
     <None Include="..\..\LICENSE" Pack="true" PackagePath="" />
     <None Include="..\..\README.md" Pack="true" PackagePath="" />
   </ItemGroup>

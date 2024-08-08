@@ -2,7 +2,7 @@ hardcodet.net NotifyIcon for WPF - Changelog
 Copyright (c) 2024 exocad GmbH, 2009-2021 Philipp Sumi
 Contact and Information: http://www.hardcodet.net
 
-1.1.1 (2024.07.17)
+1.1.1 (2024.08.08)
 *****
 
 CHG Changed the supported target frameworks to .NET 4.8, .NET6 and .NET8.
