@@ -2,6 +2,11 @@ hardcodet.net NotifyIcon for WPF - Changelog
 Copyright (c) 2024 exocad GmbH, 2009-2021 Philipp Sumi
 Contact and Information: http://www.hardcodet.net
 
+1.1.2 (2024.08.12)
+*****
+
+FIX Fixed an issue where the context menu did not show up (thanks to PR https://github.com/hardcodet/wpf-notifyicon/pull/87 made by NPatch).
+
 1.1.1 (2024.08.08)
 *****
 
